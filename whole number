@@ -1,0 +1,6 @@
+N=int(input(""))
+num=0
+
+while (num!=N):
+    print(N)
+    N=N-1
