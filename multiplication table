@@ -1,0 +1,5 @@
+multiplier=int(input("ehter the number to be multiplied = "))
+n=int(input("ehter how many times to be multiplied = "))
+for i in range (0,n+1):
+    totel=multiplier*i
+    print(n," * ", i ," = ",totel)
