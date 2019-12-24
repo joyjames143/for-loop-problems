@@ -1,0 +1,7 @@
+n=int(input())
+sum_of_all=n
+while(n!=0):
+    n=n-1
+    sum_of_all=sum_of_all+(n)
+
+print(sum_of_all)
