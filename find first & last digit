@@ -4,4 +4,4 @@ print("last digit = ",last_digit)
 
 while (n>9):
     n=n//10
-print("first number = ",n)
+print("first digit = ",n)
