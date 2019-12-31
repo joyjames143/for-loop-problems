@@ -1,0 +1,11 @@
+a=int(input("enter first number = "))
+b=int(input("enter second number = "))
+
+if (b>a):
+    t=a
+    a=b
+    b=t
+for i in range(a,0,-1):
+    if (a%i==0 and b%i==0):
+        print("hcf of",a ,"and",b,"is",i)
+        break
