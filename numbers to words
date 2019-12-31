@@ -1,0 +1,43 @@
+ones={"0":"","1":"one","2":"two","3":"three","4":"four","5":"five","6":"six","7":"seven","8":"eight","9":"nine","10":"ten",
+      "11":"eleven","12":"tweleve","13":"thirteen","14":"fourteen","15":"fifteen","16":"sixteen","17":"seventeen","18":"eighteen","19":"nineteen",
+      "20":"twenty","30":"thirty","40":"fourty","50":"fifty","60":"sixty","70":"seventy","80":"eighty","90":"ninty"}
+
+number=input("enter a number = ")
+while(len(number)>3):
+    number=input("INVALID INPUT enter a number less than 1000 = ")
+
+if(len(number)==1):
+        print(ones[number])
+
+if(len(number)==2):
+    for i in ones:
+        if(number==i):
+            print(ones[i])
+            break
+        elif(number not in ones):
+            tens_place=(int(number)//10)*10
+            once_place=(int(number)%10)
+            print(ones[str(tens_place)],ones[str(once_place)])
+            break
+
+if(len(number)==3):
+    hunderds_place=number[0]
+    tens_place=int(number)-((int(number[0]))*100)
+    for i in ones:
+        if(str(tens_place)==i):
+            print(ones[hunderds_place],"hundred ",ones[i])
+        elif(str(tens_place) not in ones):
+            ten_place=(int(tens_place)//10)*10
+            one_place = (int(tens_place) % 10)
+            print(ones[hunderds_place],"hundred and",ones[str(ten_place)], ones[str(one_place)])
+            break
+
+
+
+
+
+
+
+
+
+
