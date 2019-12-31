@@ -1,0 +1,14 @@
+num=(input("enter a binary number"))
+
+
+num=num[::-1]
+
+
+values=0
+power=0
+for i in num:
+    values=values+int(i)*(2**power)
+    power=power+1
+
+print(values)
+
