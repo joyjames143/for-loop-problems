@@ -1,0 +1,11 @@
+def pow(num_1,num_2):
+    ans=1
+    for i in range(num_2):
+        ans=ans*num_1
+    print(ans)
+
+a=int(input("enter a number = "))
+b=int(input("enter a power number = "))
+pow(a,b)
+
+
