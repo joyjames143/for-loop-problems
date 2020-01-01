@@ -1,0 +1,8 @@
+num=int(input("enter a decimal number = "))
+
+final=""
+while(num>0):
+    g=num%2
+    final=final+str(g)
+    num=num//2
+print(final[::-1])
