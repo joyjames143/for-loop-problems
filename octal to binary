@@ -1,0 +1,15 @@
+values={"0":"000","1":"001","2":"010","3":"011","4":"100","5":"101","6":"110","7":"111"}
+
+num=input("enter octal number = ")
+
+while(("8" in num) or ("9" in num)):
+    num=input("INVALID INPUT enter a valid  octal number = ")
+
+for i in num:
+    for j in values:
+        if(i==j):
+            print(values[j],end="")
+            break
+
+
+
