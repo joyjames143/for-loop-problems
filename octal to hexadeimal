@@ -1,0 +1,34 @@
+values={"0":"000","1":"001","2":"010","3":"011","4":"100","5":"101","6":"110","7":"111"}
+
+values_hex={"0000":"0","0001":"1","0010":"2","0011":"3","0100":"4","0101":"5","0110":"6","0111":"7","1000":"8","1001":"9",
+        "1010":"A","1011":"B","1100":"C","1101":"D","1110":"E","1111":"F"}
+
+num=input("enter octal number = ")
+
+while(("8" in num) or ("9" in num)):
+    num=input("INVALID INPUT enter a valid  octal number = ")
+
+binary=[]
+for i in num:
+    for j in values:
+        if(i==j):
+            binary.append(values[j])
+            break
+
+oct_to_bin  =  ""
+oct_to_bin  =  oct_to_bin.join(binary)
+
+reverse_of_oct_to_bin  =  oct_to_bin[::-1]
+reverse_of_oct_to_bin  =  list(reverse_of_oct_to_bin)
+
+while(len(reverse_of_oct_to_bin)  %  4 != 0):
+    reverse_of_oct_to_bin.append("0")
+
+oct_to_bin  =  reverse_of_oct_to_bin[::-1]
+
+four_digits=""
+for i in oct_to_bin:
+    four_digits=four_digits+str(i)
+    if (len(four_digits)==4):
+        print(values_hex[four_digits],end="")
+        four_digits=""
