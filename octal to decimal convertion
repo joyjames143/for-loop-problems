@@ -1,0 +1,14 @@
+num=(input("enter a octal number = "))
+
+while(("8" in num) or ("9" in num)):
+    num=(input("INVALID INPUT enter a valid  octal number = "))
+
+power=0
+total=0
+num=int(num)
+while (num>0):
+    total = total + (8**power) * (num%10)
+    num = num // 10
+    power += 1
+
+print(total)
