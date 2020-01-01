@@ -1,0 +1,20 @@
+values={"0":"0000","1":"0001","2":"0010","3":"0011","4":"0100","5":"0101","6":"0110","7":"0111","8":"1000","9":"1001",
+        "a":"1010","b":"1011","c":"1100","d":"1101","e":"1110","f":"1111"}
+
+
+num=input("enter a hexadecimal number = ")
+
+number=[]
+
+for i in num:
+    for j in values:
+        if (i==j):
+            number.append(values[j])
+            break
+numb=""
+number=numb.join(number)
+number=number[::-1]
+
+while(len(number)%3!=0):
+    number=number+str(0)
+print(number[::-1])
