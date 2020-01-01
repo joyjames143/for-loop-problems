@@ -1,0 +1,8 @@
+num=int(input("enter a decimal number = "))
+
+final=""
+while(num>0):
+    g=num%8
+    final=final+str(g)
+    num=num//8
+print(final[::-1])
