@@ -1,0 +1,21 @@
+values={"a":"10","b":"11","c":"12","d":"13","e":"14","f":"15"}
+
+num=input("enter a hexadecimal number  = ")
+number=[]
+
+for i in num:
+    if (i not in values):
+        number.append(i)
+    if (i in values):
+        for j in values:
+            if(j==i):
+                number.append(values[j])
+
+number=number[::-1]
+power=0
+final=0
+for k in number:
+    final=final+int(k)*(16**power)
+    power+=1
+
+print(final)
