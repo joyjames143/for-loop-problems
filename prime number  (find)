@@ -1,0 +1,14 @@
+num=int(input("enter a number = "))
+if ((num==2) or (num==3)):
+    print("prime number")
+else:
+    c = 0
+    for i in range(2, num):
+       if(c==0 and num%i==0):
+            c=c+1
+       elif(c==1):
+           print("not a prime number")
+           break
+    if(c==0):
+        print("prime number")
+
