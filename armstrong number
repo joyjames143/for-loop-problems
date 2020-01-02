@@ -1,0 +1,13 @@
+num=input("enter a number = ")
+length=len(num)
+
+total=0
+for i in num:
+    total=total+int(i)**int(length)
+
+
+if(total==int(num)):
+    print("the number is armstrong")
+else:
+    print("not a armstrong")
+
