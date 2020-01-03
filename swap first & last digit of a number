@@ -1,0 +1,6 @@
+num=input("enter a number : ")
+num=list(num)
+
+num[0],num[len(num)-1]=num[len(num)-1],num[0]
+hi=""
+print(hi.join(num))
