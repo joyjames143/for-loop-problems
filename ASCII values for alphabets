@@ -1,0 +1,15 @@
+capital=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+small=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+letter=input("enter a letter : ")
+if(letter in capital):
+    for i in range(65,91):
+        if (letter==capital[i-65]):
+            print(i,"is the ASCII value for :" ,letter)
+            break
+
+if(letter in small):
+    for i in range(97,122):
+        if (letter==small[i-97]):
+            print(i,"is the ASCII value for :", letter)
+            break
