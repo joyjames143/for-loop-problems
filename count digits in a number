@@ -1,0 +1,5 @@
+num=input("enter a number : ")
+count=0
+for i in num:
+    count=count+1
+print("input number has",count,"digits")
