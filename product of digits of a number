@@ -1,0 +1,6 @@
+num=input("enter a number : ")
+
+count=1
+for i in num:
+    count=count*int(i)
+print(count)
